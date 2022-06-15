@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --a: #F24822;
+    --b: #F28705;
+    --c: #08A63F;
+    --d: #05AFF2;
+}
+
+body{
+background-color: #191C26;
+}
+
+header{
+    padding: 2rem;
+}
+
+button{
+    color: lavenderblush;
+    border: 1px dotted greenyellow;
+    padding: 1rem 3rem;
+    background-color: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: #191C26;
+}
+
+main{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.one{
+    background-color: var(--a);
+    grid-area: one;
+}
+
+.two{
+    background-color: var(--b);
+    grid-area: two;
+}
+
+.three{
+    background-color: var(--c);
+    grid-area: three;
+}
+
+.four{
+    background-color: var(--d);
+    grid-area: four;
+}
+
+.five{
+    background-color: var(--d);
+    grid-area: five;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'one one one two'
+    'one one one two'
+    'three three four four'
+    'three three five five'
+    ;
+    gap: 20px;
+    text-align: center;
+    color: transparent;
+    height: 85vh;
+}
