@@ -73,5 +73,6 @@ main{
     gap: 20px;
     text-align: center;
     color: transparent;
-    height: 85vh;
+    height: 550px;
+    width: 700px;
 }
